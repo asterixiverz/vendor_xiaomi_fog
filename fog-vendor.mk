@@ -481,7 +481,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fog/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -494,7 +493,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -511,35 +509,14 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libdiag \
-    libdsi_netctrl \
-    libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
     libgpudataproducer \
     libgsl \
-    libidl \
     libllvm-glnext \
     libllvm-qcom \
     libmdsprpc \
-    libmmcamera_cac3 \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
-    libmmcamera_lscv35 \
-    libmmcamera_mfnr \
-    libmmcamera_mfnr_t4 \
     libmmosal_vendor \
-    libqcci_legacy \
-    libqcmaputils \
-    libqdi \
-    libqdp \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmiservices \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -553,7 +530,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -602,6 +578,7 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
+    android.hardware.secure_element@1.0-impl \
     com.qti.eeprom.truly_cmb433 \
     com.qti.flash.lm3644 \
     com.qti.sensor.c3q_aac_gc02m1b_depth \
@@ -697,6 +674,7 @@ PRODUCT_PACKAGES += \
     fingerprint.silead.bengal \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
@@ -783,12 +761,15 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsi_netctrl \
+    libdsutils \
     libgdtap \
     libgeofencing \
     libgnss \
     libgnsspps \
     libgps.utils \
     libhdr_tm \
+    libidl \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
@@ -814,6 +795,12 @@ PRODUCT_PACKAGES += \
     libmibokeh_712 \
     libminkdescriptor \
     libminksocket \
+    libmmcamera_cac3 \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
+    libmmcamera_lscv35 \
+    libmmcamera_mfnr \
+    libmmcamera_mfnr_t4 \
     libmorpho_Lowlight \
     libmpbase \
     libnetmgr \
@@ -832,11 +819,23 @@ PRODUCT_PACKAGES += \
     libpn557_fw \
     libqcbor \
     libqcc_file_agent \
+    libqcci_legacy \
+    libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
     libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
     libqmi_legacy \
+    libqmiservices \
     libqrtr \
     libqseed3 \
     libqsocket \
@@ -847,7 +846,6 @@ PRODUCT_PACKAGES += \
     libril-qc-logger \
     libril-qc-ltedirectdisc \
     libril-qc-radioconfig \
-    libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
     libsdk_sr \
@@ -929,6 +927,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
@@ -1021,19 +1020,19 @@ PRODUCT_PACKAGES += \
     misound_karaokemix_res \
     misound_res_headphone \
     misound_res_spk \
-    com.qualcomm.qti.dpm.api@1.0 \
-    libdiag_system \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
     libmmosal \
     libmmparser_lite \
+    com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libdiag_system \
+    libdpmctmgr \
+    libdpmfdmgr \
+    libdpmframework \
+    libdpmtcm \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
