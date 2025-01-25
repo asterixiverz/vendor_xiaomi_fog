@@ -481,18 +481,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fog/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -501,8 +495,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libc2d30_bltlib \
     libcapiv2svacnn \
     libcapiv2vop \
@@ -524,16 +516,16 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
-    libsoc_helper \
-    libsoc_helper_jni \
     libsysmon_cdsp_skel \
     libthermalclient \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
+    btaudio_offload_if \
+    audio.bluetooth_qti.default \
     audio.primary.bengal \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     liba2dpoffload \
     libacdb-fts \
     libacdbloader \
@@ -547,6 +539,8 @@ PRODUCT_PACKAGES += \
     libaudioconfigstore \
     libaudioparsers \
     libbatterylistener \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
     libcirrusspkrprot \
     libcomprcapture \
     libdrc \
@@ -666,7 +660,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
-    audio.bluetooth_qti.default \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
@@ -674,6 +667,9 @@ PRODUCT_PACKAGES += \
     fingerprint.silead.bengal \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qccvndhal@1.0-impl \
@@ -866,6 +862,8 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsnsapi \
     libsnsdiaglog \
+    libsoc_helper \
+    libsoc_helper_jni \
     libspl \
     libssc \
     libssc_default_listener \
@@ -925,6 +923,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
