@@ -700,7 +700,6 @@ PRODUCT_PACKAGES += \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
-    libI420colorconvert \
     libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
