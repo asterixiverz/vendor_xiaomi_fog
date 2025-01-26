@@ -557,7 +557,6 @@ PRODUCT_PACKAGES += \
     libmulawdec \
     libqtigef \
     libsmwrapper \
-    libsn100u_fw \
     libsndmonitor \
     libspkrprot \
     libssrec \
