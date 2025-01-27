@@ -3325,14 +3325,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "fingerprint.fpc.bengal",
+	name: "fingerprint.fpc.default",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/fingerprint.fpc.bengal.so"],
+			srcs: ["proprietary/vendor/lib64/hw/fingerprint.fpc.default.so"],
 			shared_libs: ["liblog", "libutils", "libcutils", "libhidlbase", "libhidltransport", "android.hardware.biometrics.fingerprint@2.1", "com.fingerprints.extension@1.0", "libQSEEComAPI", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -3343,14 +3343,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "fingerprint.silead.bengal",
+	name: "fingerprint.silead.default",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/fingerprint.silead.bengal.so"],
+			srcs: ["proprietary/vendor/lib64/hw/fingerprint.silead.default.so"],
 			shared_libs: ["liblog", "libutils", "libhardware", "libsl_fp_impl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

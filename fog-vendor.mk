@@ -661,8 +661,8 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
-    fingerprint.fpc.bengal \
-    fingerprint.silead.bengal \
+    fingerprint.fpc.default \
+    fingerprint.silead.default \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
